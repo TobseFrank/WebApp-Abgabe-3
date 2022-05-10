@@ -1,0 +1,26 @@
+.bodyBlock div{
+    flex: fl;
+    float: left;
+    padding: 20px;
+}
+
+.preview img {
+    width: 100px;
+    height: 100px;
+}
+
+.view img{
+    width: 150px;
+    height: 150px;
+}
+
+img{
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.view p{
+    text-align: center;
+}
