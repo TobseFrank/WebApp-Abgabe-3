@@ -1,0 +1,26 @@
+{
+    "1": {
+        "name": "Tobias Frank",
+        "id": "204022",
+        "imagePath": "img/204022.png",
+        "reason": "Ich habe mich für Web Application Development entschieden, weil mir das bisherige Programmieren von Webseiten bereits sehr viel spaß gemacht hat."
+    },
+    "2": {
+        "name": "Cristiano Ronaldo",
+        "id": "200000",
+        "imagePath": "img/200000.png",
+        "reason": "Ich habe mich für Web Application Development entschieden, weil ich die ECTS noch brauche."
+    },
+    "3": {
+        "name": "Kylian Mbappe",
+        "id": "200001",
+        "imagePath": "img/200001.png",
+        "reason": "Ich habe mich für Web Application Development entschieden, weil ich an diesem Tag noch keine Vorlesung habe."
+    },
+    "4":   {
+        "name": "Lionel Messi",
+        "id": "200002",
+        "imagePath": "img/200002.png",
+        "reason": "Ich habe mich für Web Application Development entschieden, weil es mir einfach fällt."
+    }
+}

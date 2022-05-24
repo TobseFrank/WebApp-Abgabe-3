@@ -1,17 +1,5 @@
-.bodyBlock div{
-    flex: fl;
-    float: left;
-    padding: 20px;
-}
-
-.preview img {
-    width: 100px;
-    height: 100px;
-}
-
-.view img{
-    width: 150px;
-    height: 150px;
+p{
+    text-align: center;
 }
 
 img{
@@ -20,7 +8,34 @@ img{
     border-radius: 5px;
     border-style: solid;
 }
-
-.view p{
-    text-align: center;
+.bodyBlock {
+    float: left;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
 }
+
+.bodyBlock div{
+    float: left;
+
+    margin: 20px;
+    height: 500px;
+    
+}
+
+.preview img {
+    width: 100px;
+    height: 100px;
+}
+
+.view{
+
+    width: 200px;
+}
+
+.view img{
+    width: 200px;
+    height: 200px;
+}
+

@@ -3,62 +3,37 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="knockout-3.5.1.js"></script>
-    <script>
-        $(document).ready(function()
-        {
-            function Model(data){
-                var self = this;
-                self.Item = ko.observable(data);
-            }
-
-            function ViewModel(){
-                var self = this;
-                this.dataCollection = ko.observableArray([]);
-                
-                var mappeddata = $.map(["204022.png"], function (d){
-                    return new Model(d);
-                });
-                
-                self.dataCollection(mappeddata);
-                
-            }
-            ko.applyBindings(new ViewModel());
-            
-        });
-    </script>
 </head>
 
 <body>
     <div class="bodyBlock">
         <div id="moveOnceLeft" class="button">
-            <input type="button" value="<">
+            <input data-bind="click: moveOnceLeft" type="button" value="<">
+        </div>
+           
+        <div  class="preview">
+            <img data-bind="attr:{src: leftPreviewImage}" alt="">
         </div>
 
-        <div id="leftPreview" class="preview">
-            <img src="img/204022.png" alt="">
+        <div  class="view">
+            <img data-bind="attr:{src: centerPreviewImage}" alt="">
+            <p data-bind="text : name"></p>
+            <p data-bind="text : matrikelNumber"></p>
+            <p data-bind="text : reason"></p>
         </div>
-
-        <div id="activeView" class="view">
-            <img src="img/204022.png" alt="">
-            <p>Tobias Frank</p>
-            <p data-bind="text: Item">204022</p>
-            <p>Grund</p>
-        </div>
-
-        <div id="rightPreview" class="preview">
-            <img src="img/204022.png" alt="">
+        
+        <div  class="preview">
+            <img data-bind="attr:{src: rightPreviewImage}" alt="">
         </div>
 
         <div id="moveOnceRight" class="button">
-            <input type="button" value=">">
+            <input data-bind="click: moveOnceRight" type="button" value=">">
         </div>
 
     </div>
+    
+    <script src="js/knockout-3.5.1.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
-
-
-
 </html>
