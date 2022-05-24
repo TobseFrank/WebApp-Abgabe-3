@@ -7,26 +7,26 @@
 
 <body>
     <div class="bodyBlock">
-        <div id="moveOnceLeft" class="button">
+        <div id="leftButton">
             <input data-bind="click: moveOnceLeft" type="button" value="<">
         </div>
            
-        <div  class="preview">
+        <div id="leftPreview">
             <img data-bind="attr:{src: leftPreviewImage}" alt="">
         </div>
 
-        <div  class="view">
+        <div  id="centerView">
             <img data-bind="attr:{src: centerPreviewImage}" alt="">
             <p data-bind="text : name"></p>
             <p data-bind="text : matrikelNumber"></p>
             <p data-bind="text : reason"></p>
         </div>
         
-        <div  class="preview">
+        <div id="rightPreview">
             <img data-bind="attr:{src: rightPreviewImage}" alt="">
         </div>
 
-        <div id="moveOnceRight" class="button">
+        <div id="rightButton">
             <input data-bind="click: moveOnceRight" type="button" value=">">
         </div>
 

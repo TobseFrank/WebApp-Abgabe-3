@@ -2,40 +2,60 @@ p{
     text-align: center;
 }
 
-img{
-    border-color: black;
-    border-width: 1px;
-    border-radius: 5px;
-    border-style: solid;
-}
+
 .bodyBlock {
-    float: left;
     border-color: black;
     border-width: 1px;
     border-radius: 5px;
     border-style: solid;
+    width: 782px;
+    height: 550px;
+    background-color: silver;
 }
 
-.bodyBlock div{
-    float: left;
 
-    margin: 20px;
-    height: 500px;
-    
-}
 
-.preview img {
+#leftPreview img,#rightPreview img {
     width: 100px;
     height: 100px;
 }
 
-.view{
-
-    width: 200px;
-}
-
-.view img{
+#centerView img{
+    padding: 50px;
     width: 200px;
     height: 200px;
 }
 
+#leftButton{
+    position: absolute;
+    top: 200px;
+    left: 10px;
+}
+#leftPreview{
+    position: absolute;
+    top: 175px;
+    left: 80px;
+}
+#centerView{
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    width: 300px;
+}
+#rightPreview{
+    position: absolute;
+    top: 175px;
+    left: 620px;
+}
+#rightButton{
+    position: absolute;
+    top: 200px;
+    left: 730px;
+}
+
+#leftButton input, #rightButton input{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
