@@ -13,6 +13,7 @@ function myViewModel(){
     self.matrikelNumber = ko.observable("ID: 200000");
     self.centerPreviewImage = ko.observable("img/200000.png");
     self.reason = ko.observable("Ich habe mich für Web Application Development entschieden, weil ich die ECTS noch brauche.");
+    self.semester = ko.observable("Semester 3")
 
     self.rightPreviewImage = ko.observable("img/200001.png");
     
@@ -57,6 +58,7 @@ function myViewModel(){
         self.name(String(users[currentCenterView][0]));
         self.matrikelNumber("ID: " + String(users[currentCenterView][1]));
         self.reason(String(users[currentCenterView][3]));
+        self.semester(String(users(currentCenterView)[4]));
     }
 
     function loadData(){
@@ -65,7 +67,7 @@ function myViewModel(){
         users = [];
         users.push(new Array("","",""))
         for(i = 1; i <= max; i++){
-            users.push(new Array(data[i].name, data[i].id, data[i].imagePath, data[i].reason));
+            users.push(new Array(data[i].name, data[i].id, data[i].imagePath, data[i].reason, data[i].semester));
         }
         console.log(users)
         return users;
